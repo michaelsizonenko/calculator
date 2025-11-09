@@ -1,5 +1,9 @@
 
 
+def is_digit(s):
+    return s in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
 def is_integer(s):
     try:
         int(s)
@@ -17,13 +21,4 @@ def is_float(s):
 
 
 def is_operation(operation):
-    if operation == '+':
-        return True
-    elif operation == '-':
-        return True
-    elif operation == '*':
-        return True
-    elif operation == '/':
-        return True
-    else:
-        return False
+    return operation in ["+", "-", "*", "/"]
